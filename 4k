@@ -1,0 +1,69 @@
+    #NoEnv
+    SendMode Input
+    SetTitleMatchMode, 2
+     
+    p::
+    Loop, 1{
+    run, netsh advfirewall firewall set rule name="Lagger" new enable=yes,, hide
+    Sleep, 1500
+    Send, {ESC Down}
+    Sleep, 45
+    Send, {ESC Up}
+    Sleep, 45
+    MouseMove, 3244, 1525
+    Sleep, 50
+    Click down
+    Sleep, 50
+    Click up
+    Sleep, 50
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    MouseMove, 3244, 1525
+    Sleep, 50
+    Click down
+    Sleep, 50
+    Click up
+    Sleep, 50
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    MouseMove, 3244, 1525
+    Sleep, 50
+    Click down
+    Sleep, 50
+    Click up
+    Sleep, 50
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    Send, {ESC Down}
+    Sleep, 100
+    Send, {ESC Up}
+    Sleep, 100
+    MouseMove, 3244, 1525
+    Sleep, 50
+    Click down
+    Sleep, 50
+    Click up
+    Sleep, 2000
+    run, netsh advfirewall firewall set rule name="Lagger" new enable=no,, hide
+    MouseMove, 1489, 1213
+    Sleep, 50
+    Click down
+    Sleep, 50
+    Click up
+    Sleep, 50
+    }
+    return
